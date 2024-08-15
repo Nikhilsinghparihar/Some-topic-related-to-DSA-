@@ -1,0 +1,284 @@
+body,
+html {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    background: #1a1a2e;
+
+    color: #fff;
+
+    overflow-x: hidden;
+
+}
+
+
+
+.lunaglow-container {
+
+    max-width: 800px;
+
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+
+h1 {
+
+    text-align: center;
+
+    color: #4ecca3;
+
+    font-family: "Orbitron", sans-serif;
+
+    font-size: 2em;
+
+    text-shadow: 0 0 10px #4ecca3;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+.lunaglow-topic {
+
+    margin-bottom: 30px;
+
+    padding: 15px;
+
+    background: rgba(78, 204, 163, 0.1);
+
+    border-radius: 10px;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.lunaglow-topic:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+
+.lunaglow-code {
+
+    background: #232741;
+
+    padding: 15px;
+
+    border-radius: 5px;
+
+    font-family: monospace;
+
+    white-space: pre-wrap;
+
+    word-break: break-all;
+
+}
+
+
+
+.lunaglow-problem {
+
+    margin-top: 15px;
+
+    font-style: italic;
+
+    color: #4ecca3;
+
+}
+
+
+
+.lunaglow-answer {
+
+    display: none;
+
+    margin-top: 10px;
+
+    padding: 15px;
+
+    background: linear-gradient(45deg, #232741, #2c3e50);
+
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px rgba(78, 204, 163, 0.3);
+
+    white-space: pre-wrap;
+
+    word-break: break-all;
+
+}
+
+
+
+.lunaglow-btn {
+
+    background: linear-gradient(45deg, #4ecca3, #45b293);
+
+    color: #1a1a2e;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.lunaglow-btn:hover {
+
+    background: linear-gradient(45deg, #45b293, #4ecca3);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+
+}
+
+
+
+@keyframes lunaglow-lightning {
+
+    0% {
+
+        background-position: 0 0;
+
+    }
+
+
+
+    50% {
+
+        background-position: 400% 0;
+
+    }
+
+
+
+    100% {
+
+        background-position: 0 0;
+
+    }
+
+}
+
+
+
+#lunaglow-lightning {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    pointer-events: none;
+
+    background: linear-gradient(45deg,
+
+            #00000000 90%,
+
+            #ffffff44 95%,
+
+            #00000000 100%);
+
+    background-size: 400% 400%;
+
+    animation: lunaglow-lightning 5s infinite;
+
+    z-index: -1;
+
+}
+
+
+
+.lunaglow-highlight {
+
+    color: #4ecca3;
+
+    font-weight: bold;
+
+}
+
+
+
+.lunaglow-intro {
+
+    font-size: 1.1em;
+
+    line-height: 1.6;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    padding: 20px;
+
+    background: rgba(78, 204, 163, 0.1);
+
+    border-radius: 10px;
+
+}
+
+
+
+.lunaglow-footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: rgba(78, 204, 163, 0.1);
+
+    margin-top: 30px;
+
+    border-radius: 10px;
+
+}
+
+
+
+.lunaglow-footer p {
+
+    margin: 5px 0;
+
+    color: #4ecca3;
+
+}
